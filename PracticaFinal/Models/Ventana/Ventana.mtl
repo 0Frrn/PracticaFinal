@@ -1,0 +1,30 @@
+newmtl glass_border1
+illum 4
+Kd 0.78 0.78 0.78
+Ka 0.30 0.30 0.30
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+Ns 45.00
+newmtl handle1
+illum 4
+Kd 0.38 0.38 0.38
+Ka 0.16 0.16 0.16
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 1.00 1.00 1.00
+Ns 50.00
+newmtl lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Madera.png
+Ni 1.00
+newmtl lambert6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd WindowTexture.jpg
+Ni 1.00
