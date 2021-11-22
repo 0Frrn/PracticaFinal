@@ -1,0 +1,60 @@
+newmtl Christmas_Tree
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tree.jpg
+map_Ka tree.jpg
+Ni 1.50
+Ks 0.09 0.09 0.09
+Ns 10.00
+newmtl ball_metall
+illum 4
+Kd 0.66 0.62 0.48
+Ka 0.66 0.62 0.48
+Tf 1.00 1.00 1.00
+Ni 1.50
+Ks 0.68 0.66 0.57
+Ns 80.00
+newmtl initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tree.jpg
+Ni 1.00
+newmtl lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tree.jpg
+Ni 1.00
+newmtl lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd esfera.jpg
+Ni 1.00
+newmtl lambert6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd esfera.png
+Ni 1.00
+newmtl loop
+illum 4
+Kd 0.34 0.30 0.22
+Ka 0.34 0.30 0.22
+Tf 1.00 1.00 1.00
+Ni 1.50
+Ks 0.63 0.63 0.63
+Ns 20.00
