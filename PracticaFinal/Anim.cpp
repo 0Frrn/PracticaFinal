@@ -113,7 +113,7 @@ glm::vec3 pointLightPositions[] = {
 	// OTRAS LUCES
 	glm::vec3(-10.0f,20.0f,0.0f),
 	glm::vec3(-10.0f,20.0f,-20.0f),
-	glm::vec3(0.0f,0.0f,0.0f),
+	glm::vec3(0.0f,20.0f,20.0f),
 	glm::vec3(0.0f,0.0f,0.0f),
 	//DIRECCION DE LA SPOTLIGHT
 	glm::vec3(2.5f,0.5f,0.0f)
@@ -180,7 +180,7 @@ int main()
 
 	Model Piso((char*)"Models/Piso.obj");
 	Model House((char*)"Models/ModelosFinales/House.obj");
-	Model Door((char*)"Models/ModelosFinales/Door.obj");
+	Model Door1((char*)"Models/ModelosFinales/Door1.obj");
 	//Model Arbol((char*)"Models/Arbol/Tree.obj");
 	//Model Llanta((char*)"Models/Carro/Wheel.obj");
 	//Model Carroseria((char*)"Models/Carro/Carroseria.obj");
@@ -271,16 +271,16 @@ int main()
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[2].specular"), 1.0f, 1.0f, 1.0f);
 		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[2].constant"), 1.0f);
 		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[2].linear"), 0.003f);
-		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[2].quadratic"), 0.3f);
+		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[2].quadratic"), 0.03f);
 
 		// Point light 4
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[3].position"), pointLightPositions[3].x, pointLightPositions[3].y, pointLightPositions[3].z);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[3].ambient"), 0.0f, 0.0f, 0.0f);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[3].diffuse"), 0.0f, 0.0f, 0.0f);
-		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[3].specular"), 0.0f, 0.0f, 0.0f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[3].ambient"), 0.8f, 0.8f, 0.8f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[3].diffuse"), 1.0f, 1.0f, 1.0f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[3].specular"), 1.0f, 1.0f, 1.0f);
 		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[3].constant"), 1.0f);
-		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[3].linear"), 0.0f);
-		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[3].quadratic"), 0.0f);
+		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[3].linear"), 0.003f);
+		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[3].quadratic"), 0.03f);
 
 		// SpotLight
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "spotLight.position"), pointLightPositions[0].x, pointLightPositions[0].y, pointLightPositions[0].z);
@@ -337,7 +337,7 @@ int main()
 		model = glm::mat4(1);
 		//model = glm::translate(model, glm::vec3(0.0f,0.2f, 0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		Door.Draw(lightingShader);
+		Door1.Draw(lightingShader);
 		glEnable(GL_BLEND);
 
 		//glEnable(GL_BLEND);
