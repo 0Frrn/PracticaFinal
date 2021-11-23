@@ -181,9 +181,10 @@ int main()
 	Model Piso((char*)"Models/Piso.obj");
 	Model House((char*)"Models/ModelosFinales/House.obj");
 	Model Door1((char*)"Models/ModelosFinales/Door1.obj");
-	//Model Arbol((char*)"Models/Arbol/Tree.obj");
-	//Model Llanta((char*)"Models/Carro/Wheel.obj");
-	//Model Carroseria((char*)"Models/Carro/Carroseria.obj");
+	Model Phone((char*)"Models/ModelosFinales/Phone.obj");
+	Model Fridge1((char*)"Models/ModelosFinales/Fridge1.obj");
+	Model Fridge2((char*)"Models/ModelosFinales/Fridge2.obj");
+	Model Fridge3((char*)"Models/ModelosFinales/Fridge3.obj");
 
 	unsigned int VBO, cubeVAO;
 	glGenVertexArrays(1, &cubeVAO);
@@ -280,7 +281,7 @@ int main()
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[3].specular"), 1.0f, 1.0f, 1.0f);
 		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[3].constant"), 1.0f);
 		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[3].linear"), 0.003f);
-		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[3].quadratic"), 0.03f);
+		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[3].quadratic"), 0.07f);
 
 		// SpotLight
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "spotLight.position"), pointLightPositions[0].x, pointLightPositions[0].y, pointLightPositions[0].z);
@@ -340,13 +341,37 @@ int main()
 		Door1.Draw(lightingShader);
 		glEnable(GL_BLEND);
 
-		//glEnable(GL_BLEND);
-		////glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(10.0f, 0.2f, 0.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//Arbol.Draw(lightingShader);
-		//glEnable(GL_BLEND);
+		glEnable(GL_BLEND);
+		//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+		model = glm::mat4(1);
+		//model = glm::translate(model, glm::vec3(0.0f,0.2f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Phone.Draw(lightingShader);
+		glEnable(GL_BLEND);
+
+		glEnable(GL_BLEND);
+		//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+		model = glm::mat4(1);
+		//model = glm::translate(model, glm::vec3(0.0f,0.2f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Fridge1.Draw(lightingShader);
+		glEnable(GL_BLEND);
+
+		glEnable(GL_BLEND);
+		//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+		model = glm::mat4(1);
+		//model = glm::translate(model, glm::vec3(0.0f,0.2f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Fridge2.Draw(lightingShader);
+		glEnable(GL_BLEND);
+
+		glEnable(GL_BLEND);
+		//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+		model = glm::mat4(1);
+		//model = glm::translate(model, glm::vec3(0.0f,0.2f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Fridge3.Draw(lightingShader);
+		glEnable(GL_BLEND);
 
 		
 
