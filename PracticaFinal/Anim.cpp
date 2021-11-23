@@ -178,8 +178,8 @@ int main()
 	Shader lightingShader("Shaders/lighting.vs", "Shaders/lighting.frag");
 	Shader lampShader("Shaders/lamp.vs", "Shaders/lamp.frag");
 
-	Model Piso((char*)"Models/Esfera/Piso.obj");
-	Model Sofa((char*)"Models/Sofa/Sofa.obj");
+	Model Piso((char*)"Models/Piso.obj");
+	Model House((char*)"Models/ModelosFinales/House.obj");
 	Model Arbol((char*)"Models/Arbol/Tree.obj");
 	//Model Llanta((char*)"Models/Carro/Wheel.obj");
 	//Model Carroseria((char*)"Models/Carro/Carroseria.obj");
@@ -327,16 +327,16 @@ int main()
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(0.0f,0.2f, 0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		Sofa.Draw(lightingShader);
+		House.Draw(lightingShader);
 		glEnable(GL_BLEND);
 
-		glEnable(GL_BLEND);
-		//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-		model = glm::mat4(1);
-		model = glm::translate(model, glm::vec3(10.0f, 0.2f, 0.0f));
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		Arbol.Draw(lightingShader);
-		glEnable(GL_BLEND);
+		//glEnable(GL_BLEND);
+		////glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+		//model = glm::mat4(1);
+		//model = glm::translate(model, glm::vec3(10.0f, 0.2f, 0.0f));
+		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		//Arbol.Draw(lightingShader);
+		//glEnable(GL_BLEND);
 
 		
 
