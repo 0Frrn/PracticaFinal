@@ -352,6 +352,8 @@ int main()
 		glEnable(GL_BLEND);
 		//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 		model = glm::mat4(1);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "material.diffuse"), 0.870f, 0.870f, 0.870f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "material.specular"), 0.9f, 0.9f, 0.9f);
 		//model = glm::translate(model, glm::vec3(0.0f,0.2f, 0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		Fridge1.Draw(lightingShader);
@@ -360,6 +362,8 @@ int main()
 		glEnable(GL_BLEND);
 		//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 		model = glm::mat4(1);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "material.diffuse"), 0.870f, 0.870f, 0.870f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "material.specular"), 0.9f, 0.9f, 0.9f);
 		//model = glm::translate(model, glm::vec3(0.0f,0.2f, 0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		Fridge2.Draw(lightingShader);
@@ -368,6 +372,8 @@ int main()
 		glEnable(GL_BLEND);
 		//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 		model = glm::mat4(1);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "material.diffuse"), 0.870f, 0.870f, 0.870f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "material.specular"), 0.9f, 0.9f, 0.9f);
 		//model = glm::translate(model, glm::vec3(0.0f,0.2f, 0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		Fridge3.Draw(lightingShader);
