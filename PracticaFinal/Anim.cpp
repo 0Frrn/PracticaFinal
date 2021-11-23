@@ -325,7 +325,7 @@ int main()
 		glEnable(GL_BLEND);
 		//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 		model = glm::mat4(1);
-		model = glm::translate(model, glm::vec3(0.0f,0.2f, 0.0f));
+		//model = glm::translate(model, glm::vec3(0.0f,0.2f, 0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		House.Draw(lightingShader);
 		glEnable(GL_BLEND);
