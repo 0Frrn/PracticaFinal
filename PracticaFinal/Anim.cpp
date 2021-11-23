@@ -111,8 +111,8 @@ glm::vec3 pointLightPositions[] = {
 	//POSICIÓN DE LA SPOTLIGHT
 	glm::vec3(0.0f,0.5f,0.0f),
 	// OTRAS LUCES
-	glm::vec3(-10.0f,15.5f,0.0f),
-	glm::vec3(-10.0f,15.5f,-20.0f),
+	glm::vec3(-10.0f,20.0f,0.0f),
+	glm::vec3(-10.0f,20.0f,-20.0f),
 	glm::vec3(0.0f,0.0f,0.0f),
 	glm::vec3(0.0f,0.0f,0.0f),
 	//DIRECCION DE LA SPOTLIGHT
@@ -180,7 +180,8 @@ int main()
 
 	Model Piso((char*)"Models/Piso.obj");
 	Model House((char*)"Models/ModelosFinales/House.obj");
-	Model Arbol((char*)"Models/Arbol/Tree.obj");
+	Model Door((char*)"Models/ModelosFinales/Door.obj");
+	//Model Arbol((char*)"Models/Arbol/Tree.obj");
 	//Model Llanta((char*)"Models/Carro/Wheel.obj");
 	//Model Carroseria((char*)"Models/Carro/Carroseria.obj");
 
@@ -329,6 +330,14 @@ int main()
 		//model = glm::translate(model, glm::vec3(0.0f,0.2f, 0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		House.Draw(lightingShader);
+		glEnable(GL_BLEND);
+
+		glEnable(GL_BLEND);
+		//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+		model = glm::mat4(1);
+		//model = glm::translate(model, glm::vec3(0.0f,0.2f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Door.Draw(lightingShader);
 		glEnable(GL_BLEND);
 
 		//glEnable(GL_BLEND);

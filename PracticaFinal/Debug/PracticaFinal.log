@@ -1,10 +1,5 @@
 ﻿  Anim.cpp
-C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(213,24): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(242,21): warning C4244: '=': conversión de 'double' a 'T'; posible pérdida de datos
-          with
-          [
-              T=float
-          ]
+C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(214,24): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
 C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(243,21): warning C4244: '=': conversión de 'double' a 'T'; posible pérdida de datos
           with
           [
@@ -15,14 +10,19 @@ C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal
           [
               T=float
           ]
-C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(397,17): warning C4305: '+=': truncamiento de 'double' a 'float'
-C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(403,17): warning C4305: '-=': truncamiento de 'double' a 'float'
-C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(409,21): warning C4305: '+=': truncamiento de 'double' a 'float'
-C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(415,21): warning C4305: '-=': truncamiento de 'double' a 'float'
-C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(628,11): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(629,11): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(633,18): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(634,18): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(636,10): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(637,10): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(245,21): warning C4244: '=': conversión de 'double' a 'T'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(406,17): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(412,17): warning C4305: '-=': truncamiento de 'double' a 'float'
+C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(418,21): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(424,21): warning C4305: '-=': truncamiento de 'double' a 'float'
+C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(637,11): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(638,11): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(642,18): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(643,18): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(645,10): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\PracticaFinal\Anim.cpp(646,10): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
   PracticaFinal.vcxproj -> C:\Users\Work\Documents\Escuela\11Semestre\Lab Compu\PracticaFinal\PracticaFinal\Debug\PracticaFinal.exe
